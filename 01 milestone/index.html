@@ -6,37 +6,40 @@
     <title>01 Milestone</title>
 </head>
 <body>
-    <h1>Review Html 5 </h1><br><br>
-    <h1>This is h1</h1>
-    <h2>This is h2</h2>
-    <h3>This is h3</h3>
-    <h4>This is h4</h4>
-    <h5>This is h5</h5>
-    <h6>This is h6</h6>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eligendi quidem maxime accusantium! Quo perferendis minus qui minima pariatur ducimus.</p>
-<h1>Blog Home Sell</h1>
-<p>this post is very....</p>
-<button>Read more</button>
-<br>
-<img src="download (2).jpg" alt="as">
-<a href="#" target="_blank">Click img details</a>
-
-<ul style="list-style-type:square;">
-    <li>Home</li>
-    <li>About</li>
-    <li>Blog</li>
-    <li>Apply</li>
-    <li>Contact</li>
-</ul>
-<ol type="A">
-    <li>Home</li>
-    <li>About</li>
-    <li>Blog</li>
-    <li>Apply</li>
-    <li>Contact</li>
-</ol>
-
-
+    <h1>Form Html 5 : </h1><br><br>
+    
+    <div>
+        <form action="submit_form.php" method="post">
+            <h3>Registration Form</h3>
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <h3>Select Your Gender</h3>
+            <!-- Gender Selection -->
+            <input type="radio" value="male" name="gender" id="male" required>
+            <label for="male">Male</label>
+            <input type="radio" value="female" name="gender" id="female" required>
+            <label for="female">Female</label><br>
+            <h3>Select Favorite Subject</h3>
+            <!-- Subject Dropdown -->
+            <select name="fav_subject" id="fav_subject" required>
+                <option value="math">Math</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+            </select><br>
+            <h3>Select Options</h3>
+            <!-- Checkbox Options -->
+            <input type="checkbox" name="option[]" value="one" id="option_one">
+            <label for="option_one">One</label>
+            <input type="checkbox" name="option[]" value="two" id="option_two">
+            <label for="option_two">Two</label>
+            <input type="checkbox" name="option[]" value="three" id="option_three">
+            <label for="option_three">Three</label><br>
+            <textarea name="comments" id="comments" placeholder="Enter your comments here..." rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Register">
+        </form>
+        
+    </div>
 
 
 
